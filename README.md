@@ -68,7 +68,10 @@ AutoGenLLMWiki/
 
 - **AI 辅助知识构建工具**（必装，以下任选其一即可）：
   - [Openclaw](https://github.com/openclaw/openclaw)
+    > 💰 **部署推荐**：推荐购买 [腾讯云轻量应用服务器 2核4G](https://curl.qcloud.com/ypKBExWz) 来部署 OpenClaw，性价比高、开箱即用。
   - [WorkBuddy](https://www.codebuddy.cn/work/)
+
+> 🛠️ **配套工具推荐**：如果你在 Linux 环境下使用 Obsidian，欢迎试试我个人开发的另一款工具 [obsidian2linux](https://github.com/chenp0401/obsidian2linux)，帮助你在 Linux 上更顺畅地使用 Obsidian。
 
 ### 初始化步骤
 
