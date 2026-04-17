@@ -61,14 +61,14 @@ AutoGenLLMWiki/
 
 - [Obsidian](https://obsidian.md/)（必装，用于可视化知识图谱）
 - **obsidian-skill**（必装，需先安装 Obsidian 后再安装此 Skill 插件）
-- **AI 辅助知识构建工具**（必装，以下任选其一即可）：
-  - [Openclaw](https://github.com/openclaw/openclaw)
-  - [WorkBuddy](https://www.codebuddy.cn/work/)
-- 支持 Markdown 的 AI 助手（如 Claude、ChatGPT、Cursor 等）
 
 > 💡 **Skill 获取推荐**：
 > - 通过 [SkillHub](https://skillhub.cn/skills/obsidian) 获取 Obsidian 相关 Skill
 > - 通过 [ClawHub](https://clawhub.ai/steipete/obsidian) 获取 steipete/obsidian Skill
+
+- **AI 辅助知识构建工具**（必装，以下任选其一即可）：
+  - [Openclaw](https://github.com/openclaw/openclaw)
+  - [WorkBuddy](https://www.codebuddy.cn/work/)
 
 ### 初始化步骤
 
