@@ -21,14 +21,16 @@
 
 ---
 
-## ✨ 核心特性
+## ✨ 核心特性与设计原则
 
-- 🧠 **累积式知识库**：不是临时缓存，是永久沉淀的结构化知识
-- 🔗 **自动交叉引用**：使用 Obsidian 双链 `[[]]` 自动维护关联
-- ⚠️ **矛盾可见**：冲突信息不静默覆盖，而是标记 `> [!warning] 矛盾` 待解决
-- 📋 **统一规范**：标准化的命名、frontmatter 元数据、标签体系
-- 🔍 **可追溯性**：每个知识点都有来源引用，绝不"幻觉"
-- 🤖 **AI 友好**：`SCHEMA.md` 让任何支持 Markdown 的 AI 都能正确维护
+| 特性 | 说明 |
+|------|------|
+| 🧠 **累积式知识库** | Wiki 是永久沉淀的结构化知识，而非临时缓存 |
+| 🔗 **自动交叉引用** | 使用 Obsidian 双链 `[[]]` 自动维护关联 |
+| 🔍 **可追溯** | 每个知识点都有来源引用，绝不"幻觉" |
+| ⚠️ **矛盾可见** | 冲突信息不静默覆盖，而是标记 `> [!warning] 矛盾` 待解决 |
+| 📋 **结构化** | 统一的命名规范、frontmatter 元数据、标签体系 |
+| 🤖 **AI 友好** | `SCHEMA.md` 让任何支持 Markdown 的 AI 都能正确维护 |
 
 ---
 
@@ -57,23 +59,34 @@ AutoGenLLMWiki/
 
 ## 🚀 快速开始
 
-### 前置要求
+### 一、前置要求
 
-- [Obsidian](https://obsidian.md/)（必装，用于可视化知识图谱）
-- **obsidian-skill**（必装，需先安装 Obsidian 后再安装此 Skill 插件）
+本项目需要以下三类工具配合使用：
 
-> 💡 **Skill 获取推荐**：
-> - 通过 [SkillHub](https://skillhub.cn/skills/obsidian) 获取 Obsidian 相关 Skill
-> - 通过 [ClawHub](https://clawhub.ai/steipete/obsidian) 获取 steipete/obsidian Skill
+#### 1. Obsidian（知识库宿主）
 
-- **AI 辅助知识构建工具**（必装，以下任选其一即可）：
-  - [Openclaw](https://github.com/openclaw/openclaw)
-    > 💰 **部署推荐**（以下任选其一）：
-    > - **CVM 一键部署**：通过 [腾讯云市场 OpenClaw 一键部署镜像](https://app.cloud.tencent.com/detail/SPU_BHGJGAFIIJ7195) 在 CVM 上快速启动，免去手动环境配置。
-    > - **轻量云部署**：购买 [腾讯云轻量应用服务器 2核4G](https://cloud.tencent.com/act/cps/redirect?redirect=38185&cps_key=722b0c190220a288e06aff97161cdc4d) 来部署 OpenClaw，性价比高、开箱即用。
-  - [WorkBuddy](https://www.codebuddy.cn/work/)
+- [Obsidian](https://obsidian.md/) — **必装**，用于可视化与管理知识图谱
 
-### 初始化步骤
+#### 2. obsidian-skill 插件（AI 能力桥接）
+
+安装 Obsidian 后，还需安装 **obsidian-skill** 插件，可通过以下任一渠道获取：
+
+- [SkillHub](https://skillhub.cn/skills/obsidian) — 获取 Obsidian 相关 Skill
+- [ClawHub](https://clawhub.ai/steipete/obsidian) — 获取 steipete/obsidian Skill
+
+#### 3. AI 辅助知识构建工具（任选其一）
+
+- **[OpenClaw](https://github.com/openclaw/openclaw)** — 开源个人 AI 助理
+
+  💰 部署推荐（任选其一）：
+  - **CVM 一键部署**：通过 [腾讯云应用 · OpenClaw 一键部署镜像](https://cloud.tencent.com/act/cps/redirect?redirect=38185&cps_key=722b0c190220a288e06aff97161cdc4d) 在 CVM 上快速启动，免去手动环境配置。
+  - **轻量云部署**：购买 [腾讯云轻量应用服务器 2核4G](https://cloud.tencent.com/act/cps/redirect?redirect=38185&cps_key=722b0c190220a288e06aff97161cdc4d) 来部署 OpenClaw，性价比高、开箱即用。
+
+- **[WorkBuddy](https://www.codebuddy.cn/work/)** — 另一款个人 AI 助理
+
+---
+
+### 二、搭建知识库（初始化）
 
 > 📌 **重要说明**：[`LLM-Wiki-ARCHITECTURE.md`](./LLM-Wiki-ARCHITECTURE.md) 是**专门给 AI 阅读的搭建手册**，而非给人类阅读的文档。你只需把它交给 AI，AI 会根据其中的架构规范自动完成整个知识库的搭建。
 
@@ -92,9 +105,11 @@ AutoGenLLMWiki/
 
 ---
 
-## 🧩 三大核心操作
+### 三、日常使用：三大核心操作
 
-### 1️⃣ 摄入 (Ingest) — 向 Wiki 注入新知识
+搭建完成后，围绕以下三个操作使用你的知识库：
+
+#### 1️⃣ 摄入 (Ingest) — 向 Wiki 注入新知识
 
 将 Markdown 文件放入 `raw/` 目录，然后告诉 AI：
 
@@ -111,13 +126,13 @@ AI 会自动：
 - 检测矛盾 → 标记待解决
 - 记录操作 → 追加到 `log.md`
 
-### 2️⃣ 查询 (Query) — 从 Wiki 获取知识
+#### 2️⃣ 查询 (Query) — 从 Wiki 获取知识
 
 > "根据 LLM Wiki，[你的问题]？"
 
 AI 会基于累积的 Wiki 内容回答，**必附带 `[[双链]]` 引用**，并在有价值时自动沉淀为新的分析页面。
 
-### 3️⃣ 维护 (Lint) — 健康检查
+#### 3️⃣ 维护 (Lint) — 健康检查
 
 > "请对 LLM Wiki 执行健康检查。"
 
@@ -173,21 +188,17 @@ AI/LLM, AI/向量数据库, AI/RAG
 
 ---
 
-## 🎨 设计原则
-
-1. **持久性**：Wiki 是累积的产物，不是临时缓存
-2. **结构化**：统一的命名规范、frontmatter、标签体系
-3. **可追溯**：每个知识点都有来源引用
-4. **矛盾可见**：冲突信息不静默覆盖，而是标记待解决
-5. **AI 友好**：`SCHEMA.md` 让任何 AI 都能正确维护这个系统
-
----
-
 ## 📚 详细文档
 
 完整的架构说明、Schema 规范、页面模板请参阅：
 
 👉 [LLM-Wiki-ARCHITECTURE.md](./LLM-Wiki-ARCHITECTURE.md)
+
+---
+
+## 🧰 相关项目 / 配套工具
+
+- **[obsidian2linux](https://github.com/chenp0401/obsidian2linux)** — 我个人开发的另一款工具。如果你在 Linux 环境下使用 Obsidian，并希望和你的 Mac 同步 Obsidian vault，它可以帮助你在 Linux 和 Mac 上更顺畅地使用 Obsidian。结合 iCloud，可免费实现 **iPhone / Mac / Linux 多终端同步**。
 
 ---
 
@@ -202,12 +213,6 @@ AI/LLM, AI/向量数据库, AI/RAG
 ## 📄 许可证
 
 本项目采用 [MIT 许可证](./LICENSE)。
-
----
-
-## 🧰 相关项目 / 配套工具
-
-- **[obsidian2linux](https://github.com/chenp0401/obsidian2linux)** — 我个人开发的另一款工具。如果你在 Linux 环境下使用 Obsidian，并希望和你的 Mac 同步 Obsidian vault，它可以帮助你在 Linux 和 Mac 上更顺畅地使用 Obsidian。结合 iCloud，可免费实现 **iPhone / Mac / Linux 多终端同步**。
 
 ---
 
