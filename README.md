@@ -70,7 +70,7 @@ AutoGenLLMWiki/
   - [Openclaw](https://github.com/openclaw/openclaw)
     > 💰 **部署推荐**（以下任选其一）：
     > - **CVM 一键部署**：通过 [腾讯云市场 OpenClaw 一键部署镜像](https://app.cloud.tencent.com/detail/SPU_BHGJGAFIIJ7195) 在 CVM 上快速启动，免去手动环境配置。
-    > - **轻量云部署**：购买 [腾讯云轻量应用服务器 2核4G](https://curl.qcloud.com/ypKBExWz) 来部署 OpenClaw，性价比高、开箱即用。
+    > - **轻量云部署**：购买 [腾讯云轻量应用服务器 2核4G](https://cloud.tencent.com/act/cps/redirect?redirect=38185&cps_key=722b0c190220a288e06aff97161cdc4d) 来部署 OpenClaw，性价比高、开箱即用。
   - [WorkBuddy](https://www.codebuddy.cn/work/)
 
 ### 初始化步骤
@@ -79,7 +79,7 @@ AutoGenLLMWiki/
 
 **只需一步：让 AI 自动搭建**
 
-1. 将 [`LLM-Wiki-ARCHITECTURE.md`](./LLM-Wiki-ARCHITECTURE.md) 完整内容发送给 AI
+1. 将 [`LLM-Wiki-ARCHITECTURE.md`](./LLM-Wiki-ARCHITECTURE.md) 完整内容发送给 **WorkBuddy / OpenClaw 或其他类似的个人 AI 助理软件**
 2. 对 AI 说：
 
    > "请根据上述架构说明，在我的 Obsidian vault 中创建完整的 LLM Wiki 目录结构和核心文件。"
