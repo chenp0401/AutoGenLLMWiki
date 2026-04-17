@@ -72,7 +72,9 @@ AutoGenLLMWiki/
 
 ### 初始化步骤
 
-#### 方式一：让 AI 自动搭建
+> 📌 **重要说明**：[`LLM-Wiki-ARCHITECTURE.md`](./LLM-Wiki-ARCHITECTURE.md) 是**专门给 AI 阅读的搭建手册**，而非给人类阅读的文档。你只需把它交给 AI，AI 会根据其中的架构规范自动完成整个知识库的搭建。
+
+**只需一步：让 AI 自动搭建**
 
 1. 将 [`LLM-Wiki-ARCHITECTURE.md`](./LLM-Wiki-ARCHITECTURE.md) 完整内容发送给 AI
 2. 对 AI 说：
@@ -84,15 +86,6 @@ AutoGenLLMWiki/
    - `SCHEMA.md`、`index.md`、`log.md`
    - 页面模板文件
    - `.gitkeep` 占位文件
-
-#### 方式二：手动克隆
-
-```bash
-git clone https://github.com/chenp0401/AutoGenLLMWiki.git
-cd AutoGenLLMWiki
-```
-
-然后用 Obsidian 打开该目录即可。
 
 ---
 
