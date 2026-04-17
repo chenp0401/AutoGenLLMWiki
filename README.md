@@ -69,8 +69,8 @@ AutoGenLLMWiki/
 - **AI 辅助知识构建工具**（必装，以下任选其一即可）：
   - [Openclaw](https://github.com/openclaw/openclaw)
     > 💰 **部署推荐**（以下任选其一）：
-    > - **轻量云部署**：购买 [腾讯云轻量应用服务器 2核4G](https://curl.qcloud.com/ypKBExWz) 来部署 OpenClaw，性价比高、开箱即用。
     > - **CVM 一键部署**：通过 [腾讯云市场 OpenClaw 一键部署镜像](https://app.cloud.tencent.com/detail/SPU_BHGJGAFIIJ7195) 在 CVM 上快速启动，免去手动环境配置。
+    > - **轻量云部署**：购买 [腾讯云轻量应用服务器 2核4G](https://curl.qcloud.com/ypKBExWz) 来部署 OpenClaw，性价比高、开箱即用。
   - [WorkBuddy](https://www.codebuddy.cn/work/)
 
 > 🛠️ **配套工具推荐**：如果你在 Linux 环境下使用 Obsidian，并希望和你的 Mac 同步 Obsidian vault，欢迎试试我个人开发的另一款工具 [obsidian2linux](https://github.com/chenp0401/obsidian2linux)，帮助你在 Linux 和 Mac 上更顺畅地使用 Obsidian。结合 iCloud，可免费实现 **iPhone / Mac / Linux 多终端同步**。
