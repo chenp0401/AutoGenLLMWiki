@@ -73,8 +73,6 @@ AutoGenLLMWiki/
     > - **轻量云部署**：购买 [腾讯云轻量应用服务器 2核4G](https://curl.qcloud.com/ypKBExWz) 来部署 OpenClaw，性价比高、开箱即用。
   - [WorkBuddy](https://www.codebuddy.cn/work/)
 
-> 🛠️ **配套工具推荐**：如果你在 Linux 环境下使用 Obsidian，并希望和你的 Mac 同步 Obsidian vault，欢迎试试我个人开发的另一款工具 [obsidian2linux](https://github.com/chenp0401/obsidian2linux)，帮助你在 Linux 和 Mac 上更顺畅地使用 Obsidian。结合 iCloud，可免费实现 **iPhone / Mac / Linux 多终端同步**。
-
 ### 初始化步骤
 
 > 📌 **重要说明**：[`LLM-Wiki-ARCHITECTURE.md`](./LLM-Wiki-ARCHITECTURE.md) 是**专门给 AI 阅读的搭建手册**，而非给人类阅读的文档。你只需把它交给 AI，AI 会根据其中的架构规范自动完成整个知识库的搭建。
@@ -204,6 +202,12 @@ AI/LLM, AI/向量数据库, AI/RAG
 ## 📄 许可证
 
 本项目采用 [MIT 许可证](./LICENSE)。
+
+---
+
+## 🧰 相关项目 / 配套工具
+
+- **[obsidian2linux](https://github.com/chenp0401/obsidian2linux)** — 我个人开发的另一款工具。如果你在 Linux 环境下使用 Obsidian，并希望和你的 Mac 同步 Obsidian vault，它可以帮助你在 Linux 和 Mac 上更顺畅地使用 Obsidian。结合 iCloud，可免费实现 **iPhone / Mac / Linux 多终端同步**。
 
 ---
 
